@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html {
+        background-color: #1e1e1e;
+        color: #ffffff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue,
+          PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC,
+          WenQuanYi Micro Hei, sans-serif;
+      }
+      .card {
+        margin: 1em;
+        border-radius: 8px;
+        background-color: #333333;
+        overflow: auto;
+      }
+      #src,
+      #dst {
+        word-break: break-all;
+        padding: 16px;
+        font-weight: bold;
+      }
+      .subtitle {
+        font-weight: bold;
+        color: #616161;
+        font-size: 14px;
+        padding: 16px;
+        padding-bottom: 0;
+        margin: 0;
+      }
+      .blue {
+        color: #367adb;
+      }
+      .head {
+        font-weight: bold;
+        text-align: center;
+        margin: 1em 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <p class="head">翻译</p>
+      <div class="card">
+        <p class="subtitle blue">中文（中国大陆）</p>
+        <div id="dst" class="blue"></div>
+      </div>
+      <div class="card">
+        <p class="subtitle">英语（美国）</p>
+        <div id="src"></div>
+      </div>
+    </div>
+  </body>
+</html>
